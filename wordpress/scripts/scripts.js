@@ -1,0 +1,19 @@
+/*var secretButtonStatus;*/
+
+//if (localStorage.secretButton){
+  //secretButtonStatus = localStorage.getItem('buttonStatus');
+//}
+
+$(document).ready(function(){
+/*  var secretButton = $('#secretButton');*/
+  //var subscribeButton = $('.pum-content .subscribeButton');
+  //subscribeButton.on('click', function( event ){
+    //localStorage.setItem('buttonStatus', 'true');
+  //});
+
+  //if( secretButtonStatus ){
+    //secretButton.click(); 
+    //localStorage.setItem( 'buttonStatus', 'false');
+  //}
+
+});
