@@ -186,7 +186,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 }
 #top-bar.sticky {
   position: fixed;
-  height:66px;
+  height:125px;
   line-height:66px;
 }
 #top-bar.sticky #logo img {
@@ -295,7 +295,8 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 
 /* ----- Regular Menu ----- */
 #nav-wrapper .menu {
-	text-align:center;
+  text-align: center;
+  margin-right: 30px;
 }
 #nav-wrapper .menu li {
 	display:inline-block;

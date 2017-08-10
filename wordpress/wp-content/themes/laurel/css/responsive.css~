@@ -1,3 +1,26 @@
+.newsletterButton{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px !important;
+}
+
+.footer-toprow {
+  margin: 0px 100px;
+  padding: 50px 0px;
+}
+
+.footer-bottomrow {
+  margin: 0px 100px;
+  padding: 0 0 50px 0;
+}
+
+
+@media only screen and (max-width: 1280px){
+  #logo img {
+    max-width: 20% !important;
+  }
+}
+
 @media only screen and (max-width : 1400px) {
 	
 	/* General */
@@ -5,9 +28,9 @@
 	.sp-container { max-width:1200px; }
 	
 	/* Menu */
-	#nav-wrapper { display:none; }
-	#mobile-menu { display:block; }
-	#slick-mobile-menu { display:block; }
+	#nav-wrapper { display:block; }
+	#mobile-menu { display:none; }
+	#slick-mobile-menu { display:none; }
 	
 	/* Slider */
 	.feat-item { height:600px;}
@@ -21,8 +44,10 @@
 	
 }
 
-@media only screen and (min-width: 942px) and (max-width: 1170px) {
-	
+@media only screen and (min-width: 942px) and (max-width: 1200px) {
+
+  
+
 	/* General */
 	#wrapper { max-width:940px; }
 	.sp-container { max-width:940px; }
@@ -538,3 +563,4 @@
 	}
 	
 }
+

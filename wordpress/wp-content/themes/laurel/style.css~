@@ -295,7 +295,8 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 
 /* ----- Regular Menu ----- */
 #nav-wrapper .menu {
-	text-align:center;
+  text-align: center;
+  margin-right: 30px;
 }
 #nav-wrapper .menu li {
 	display:inline-block;
@@ -840,6 +841,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 		-moz-transition:.25s;
 		-webkit-transition:.25s;
 		transition:.25s;
+    display: none;
 	}
 	.post-entry .read-more:hover, .read-more:hover {
 		opacity:.8;

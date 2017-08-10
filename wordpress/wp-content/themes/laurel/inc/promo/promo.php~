@@ -35,9 +35,9 @@
 			<?php if(get_theme_mod('laurel_promo3_title') || get_theme_mod('laurel_promo3_image')) : ?>
 			<div class="sp-col-4">
 				<div class="promo-item"  style="background-image:url(<?php if(get_theme_mod('laurel_promo3_image')) { echo get_theme_mod('laurel_promo3_image'); } else { echo get_template_directory_uri() . '/img/slider-default.png'; } ?>)">
-          <?php if(get_theme_mod('laurel_promo3_url')) : ?>
-<a href="<?php echo esc_url(get_theme_mod('laurel_promo2_url')); ?>"<?php 
-echo esc_url(get_theme_mod('laurel_promo3_url')); ?> class="promo-link"></a><?php endif; ?>
+          <?php //if(get_theme_mod('laurel_promo3_url')) : ?>
+<a href="#wow-modal-id-1"<?php 
+//echo esc_url(get_theme_mod('laurel_promo3_url')); ?> class="promo-link pum-trigger newsletterButton"></a><?php // endif; ?>
 					<div class="promo-overlay">
 						<?php if(get_theme_mod('laurel_promo3_title')) : ?>
 						<h4><?php echo wp_kses_post(get_theme_mod('laurel_promo3_title')); ?></h4>
