@@ -190,7 +190,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
   line-height:66px;
 }
 #top-bar.sticky #logo img {
-	max-height:66px;
+	max-height:125px;
 }
 #top-bar.sticky #show-search input {
 	height:66px;
@@ -607,6 +607,23 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 	margin-bottom:60px;
 }
 
+.post-2 {
+  max-width: 640px;
+  margin: 0px auto;
+}
+
+.post-2 .post-header{
+  display: none;
+}
+
+.about-title {
+  text-align: left;
+  width: 100%;
+  /*background-color: yellow;*/
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
 /* ----- Post Header ----- */
 .post-header {
 	text-align:center;
@@ -701,12 +718,20 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 }
 
 /* ----- Post Category ----- */
+.cat {
+  padding: 5px;
+  background-color: #BD2424;
+  max-width: 150px;
+  text-align: center;
+}
+
 .post-header .cat {
 	display:block;
 	margin-bottom:8px;
 }
+ 
 .feat-overlay .cat a, .post-header .cat a {
-	color:#999;
+	color: white;
 	text-transform:uppercase;
 	letter-spacing:2px;
 	font-size:12px;
@@ -857,6 +882,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 	height:50px;
 	line-height:48px;
 	margin-top:2px;
+  margin-bottom: 30px;
 	clear:both;
 }
 .meta-left {
@@ -1751,7 +1777,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 	color:#000;
 }
 #footer-bottom {
-	padding:26px 0;
+	padding: 0 0;
 	text-align:center;
 	font-size:12px;
 	color:#a5a5a5;

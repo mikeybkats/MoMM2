@@ -14,6 +14,11 @@
   padding: 0 0 50px 0;
 }
 
+.post {
+  margin: 0px auto;
+  max-width: 700px;
+}
+
 
 @media only screen and (max-width: 1280px){
   #logo img {
@@ -41,6 +46,9 @@
 	#top-bar.header2 #mobile-menu, #top-bar.header2 #slick-mobile-menu {
 		display:none;
 	}
+
+  .post {
+  }
 	
 }
 
@@ -108,7 +116,10 @@
 		padding:0 15px 34px;
 	}
 	
-	/* Footer */
+  .post {
+  }
+	
+  /* Footer */
 	#footer-social a {
 		margin:0 22px;
 	}
@@ -221,6 +232,9 @@
 		padding:0 40px 34px;
 	}
 	
+  .post {
+  }
+
 	/* Footer */
 	#ig-footer .instagram-pics li {
 		width:25%;
@@ -393,7 +407,12 @@
 	
 	.post-img .bx-wrapper .bx-controls-direction a { opacity:1; }
 	
-	/* Footer */
+  .post {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+	
+  /* Footer */
 	#ig-footer .instagram-pics li {
 		width:33.3%;
 	}
@@ -556,6 +575,11 @@
 	.sp-row.post-layout .post-related .sp-row {
 		margin:0 -8px;
 	}
+
+ .post {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
 	
 	/* Woocommerce */
 	.woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering {
