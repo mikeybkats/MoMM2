@@ -40,17 +40,17 @@ class laurel_promo_widget extends WP_Widget {
 		$margin = $instance['margin'];
 		$newtab = $instance['newtab'];
 		$border = $instance['border'];
-		
-	
-		
+
+
+
 		if($border == true) {
 			$before_widget = str_replace('class="', 'class="noborder ', $before_widget);
 		}
-		
+
 		if($margin) {
 			$before_widget = str_replace('<div', '<div style="margin-bottom:'. $margin .'px;" ', $before_widget);
 		}
-		
+
 		/* Before widget (defined by themes). */
 		echo $before_widget;
 
@@ -59,7 +59,7 @@ class laurel_promo_widget extends WP_Widget {
 			echo $before_title . $title . $after_title;
 
 		?>
-			
+
 			<div class="promo-item" style="<?php if($image_url) : ?>background-image:url(<?php echo esc_url($image_url); ?>);<?php else : ?>background-color:#f4f4f4;<?php endif; ?> <?php if($height) : ?>height:<?php echo esc_html($height); ?>px;<?php else : ?>height:130px;<?php endif; ?>">
 				<?php if($image_link) : ?><a <?php if($newtab) : ?>target="_blank"<?php endif; ?> class="promo-link" href="<?php echo esc_url($image_link); ?>"></a><?php endif; ?>
 				<?php if($heading) : ?>
@@ -68,7 +68,7 @@ class laurel_promo_widget extends WP_Widget {
 				</div>
 				<?php endif; ?>
 			</div>
-			
+
 		<?php
 
 		/* After widget (defined by themes). */
@@ -106,45 +106,45 @@ class laurel_promo_widget extends WP_Widget {
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title', 'laurel' ); ?>:</label>
 			<input id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" style="width:96%;" />
 		</p>
-		
+
 		<!-- Background URL -->
 		<p>
 			<label for="<?php echo $this->get_field_id( 'image_url' ); ?>"><?php esc_html_e( 'Background Image URL', 'laurel' ); ?>:</label>
 			<input id="<?php echo $this->get_field_id( 'image_url' ); ?>" name="<?php echo $this->get_field_name( 'image_url' ); ?>" value="<?php echo $instance['image_url']; ?>" style="width:96%;" />
 			<small><?php esc_html_e( 'Enter the background image URL you want to use. You can upload your background image via Media > Add New', 'laurel' ); ?></small>
 		</p>
-		
+
 		<!-- Image Text -->
 		<p>
 			<label for="<?php echo $this->get_field_id( 'heading' ); ?>"><?php esc_html_e( 'Promo Text', 'laurel' ); ?>:</label>
 			<input id="<?php echo $this->get_field_id( 'heading' ); ?>" name="<?php echo $this->get_field_name( 'heading' ); ?>" value="<?php echo $instance['heading']; ?>" style="width:96%;" />
 		</p>
-		
+
 		<!-- Link -->
 		<p>
 			<label for="<?php echo $this->get_field_id( 'image_link' ); ?>"><?php esc_html_e( 'Promo Link', 'laurel' ); ?>:</label>
 			<input id="<?php echo $this->get_field_id( 'image_link' ); ?>" name="<?php echo $this->get_field_name( 'image_link' ); ?>" value="<?php echo $instance['image_link']; ?>" style="width:96%;" />
 			<small><?php esc_html_e( 'Enter a link you want the promo box to go to.', 'laurel' ); ?></small>
 		</p>
-		
+
 		<!-- Height -->
 		<p>
 			<label for="<?php echo $this->get_field_id( 'height' ); ?>"><?php esc_html_e( 'Promo Box Height', 'laurel' ); ?>:</label><br>
 			<input id="<?php echo $this->get_field_id( 'height' ); ?>" name="<?php echo $this->get_field_name( 'height' ); ?>" value="<?php echo $instance['height']; ?>" style="width:60%;" /> px
 		</p>
-		
+
 		<!-- Margin -->
 		<p>
 			<label for="<?php echo $this->get_field_id( 'margin' ); ?>"><?php esc_html_e( 'Promo Box Margin Bottom', 'laurel' ); ?>:</label><br>
 			<input id="<?php echo $this->get_field_id( 'margin' ); ?>" name="<?php echo $this->get_field_name( 'margin' ); ?>" value="<?php echo $instance['margin']; ?>" style="width:60%;" /> px
 		</p>
-		
+
 		<!-- New tab -->
 		<p>
 			<label for="<?php echo $this->get_field_id( 'newtab' ); ?>"><?php esc_html_e( 'Open link in a new tab?', 'laurel' ); ?></label>
 			<input type="checkbox" id="<?php echo $this->get_field_id( 'newtab' ); ?>" name="<?php echo $this->get_field_name( 'newtab' ); ?>" <?php checked( (bool) $instance['newtab'], true ); ?> />
 		</p>
-		
+
 		<!-- Border -->
 		<p>
 			<label for="<?php echo $this->get_field_id( 'border' ); ?>"><?php esc_html_e( 'Hide Bottom Border?', 'laurel' ); ?></label>

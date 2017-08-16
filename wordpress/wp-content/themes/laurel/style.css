@@ -190,10 +190,15 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
   line-height:66px;
 }
 #top-bar.sticky #logo img {
-	max-height:125px;
+	/*max-height:125px;*/
+  max-width: 26%;
 }
 #top-bar.sticky #show-search input {
 	height:66px;
+}
+
+.secret-button {
+  display: none;
 }
 
 /* ----- Logo ----- */
@@ -307,8 +312,9 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 	color:#000;
 	text-transform:uppercase;
 	letter-spacing:2px;
-	font-size:10px;
+	font-size:12px;
 	display:block;
+  font-weight: 600;
 }
 #nav-wrapper .menu li a:hover {
 	color:#999;
@@ -566,6 +572,9 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 	-webkit-transition:.25s;
 	transition:.25s;
 }
+
+
+
 .promo-item:hover {
 	webkit-box-shadow: 0px 0px 14px 7px rgba(158,158,158,0.22); 
     -moz-box-shadow: 0px 0px 14px 7px rgba(158,158,158,0.22);
@@ -574,6 +583,13 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 .promo-item:last-child {
 	margin-right:0;
 }
+
+.promo-item:hover h4{
+  transition: background .5s, color .5s; 
+  background: #BD2424;
+  color: white;
+}
+
 .promo-overlay {
 	height: 100%;
     display: table-cell;   
@@ -590,6 +606,8 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 	background:#ffffff;
 	display:inline-block;
 }
+
+
 .promo-link {
 	position: absolute; 
 	height: 100%; 
@@ -1782,6 +1800,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 }
 #footer-social a:hover {
 	color:#000;
+  .sticky #logo img 
 }
 #footer-bottom {
 	padding: 0 0;
@@ -1801,7 +1820,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 }
 .archive-box {
 	text-align:center;
-	border-bottom:1px solid;
+	r.sticky #logo img border-bottom:1px solid;
 	border-color:#eee;
 	padding:42px 0 40px;
 	background:#f6f6f6;
@@ -2948,13 +2967,14 @@ input#rememberme {
 }
 .cart-contents:hover {text-decoration: none}
 .cart-contents .sp-count {
-	background:#8db392;
-	color:#fff;
+	background:white;
+	color:black;
+  border: 1px solid black;
 	display:inline-block;
 	width:16px;
 	height:16px;
 	text-align:center;
-	line-height:16px;
+	line-height:14px;
 	border-radius:100%;
 	font-size:10px;
 	position:absolute;
@@ -2971,14 +2991,13 @@ input#rememberme {
     margin: 0px 0px -2px 0px;
 }
 
-.mail-svg svg:hover{
-    fill: #999;
+.newsletterButton {
+  fill: #BD2424;
 }
 
-.secret-button{
-	display: none;
+.newsletterButton:hover{
+  fill: #999;
 }
-
 .footer-about{
 	margin: 100px;
 }
