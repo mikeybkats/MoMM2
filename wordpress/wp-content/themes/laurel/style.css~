@@ -491,7 +491,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 	color:#000;
 	font-size:34px;
 	
-	font-style:italic;
+	font-style:normal;
 }
 .feat-overlay h2 {
 	margin-bottom:6px;
@@ -613,7 +613,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 }
 
 .post-2 .post-header{
-  display: none;
+  /*display: none;*/
 }
 
 .about-title {
@@ -638,7 +638,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 .post-header h2 a, .post-header h1{
 	color:#000;
 	font-size:28px;
-	font-style:italic;
+	font-style:normal;
 	-o-transition:.25s;
 	-ms-transition:.25s;
 	-moz-transition:.25s;
@@ -652,10 +652,11 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 /* ----- Post Image ----- */
 .post-img {
 	margin-bottom:25px;
+  max-width: 700px;
 	/*text-align:center;*/
 }
 .post-img img {
-	max-width:100%;
+	width:100%;
 	height:auto;
 	vertical-align:middle;
 }
@@ -875,6 +876,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 
 /* ----- Post Meta ----- */
 .post-meta {
+  max-width: 700px;
 	padding:0 20px;
 	border-top:1px solid;
 	border-bottom:1px solid;
@@ -2955,4 +2957,34 @@ input#rememberme {
 	right:-8px;
 }
 
+.widget.laurel_about_widget {
+	background-color: yellow;
+	padding: 20px;
+}
+
+.mail-svg svg{
+    margin: 0px 0px -2px 0px;
+}
+
+.mail-svg svg:hover{
+    fill: #999;
+}
+
+.secret-button{
+	display: none;
+}
+
+.footer-about{
+	margin: 100px;
+}
+
+.post-custom{
+	max-width: 700px;
+}
+
+.post-header{
+	max-width: 700px;
+	margin: 0px;
+	text-align: left;
+}
 

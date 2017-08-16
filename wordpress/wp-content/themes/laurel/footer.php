@@ -10,8 +10,8 @@
 <div class="row footer-toprow">
   <div class="col-sm-4 col-xs-12">
     <h3>About MoMM</h3>
-    <p>Methods of a Modern Male is a weekly email digest of everything you need to live a happier, healthier life. Food, fashion, fitness... think of us as your trendy friend in LA who reads Esquire, GQ and Men's Health, takes all the good shit and then breaks it up into a weekly digest of bite-sized information aimed at making the weird transition to adulthood a little easier for us normal people.
-    </p>
+    <p>Methods of a Modern Male is a lifestyle blog focused on everything millennial men need to live a happier, healthier life. Think of us as your trendy friend in LA who’s in the know about everything from fashion to fitness, but still comes back home to bro down with the boys on the weekends. Straight talk on the things that matter to help make the weird transition to adulthood a little easier.
+</p>
   </div>
   <div class="col-sm-2 col-xs-12"></div>
   <div class="col-sm-2 col-xs-12">

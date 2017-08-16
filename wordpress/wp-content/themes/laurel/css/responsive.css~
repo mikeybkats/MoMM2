@@ -48,8 +48,6 @@
 	}
 
   .post {
-    padding-left: 25%;
-    padding-right: 25%;
   }
 	
 }
@@ -119,8 +117,6 @@
 	}
 	
   .post {
-    padding-left: 25%;
-    padding-right: 25%;
   }
 	
   /* Footer */
@@ -237,8 +233,6 @@
 	}
 	
   .post {
-    padding-left: 5%;
-    padding-right: 5%;
   }
 
 	/* Footer */
@@ -371,7 +365,7 @@
 	
 	/* Posts */
 	.post-header {
-		max-width:560px;
+		max-width:700px;
 	}
 	.post-entry.is-excerpt {
 		padding:0 20px 34px;
