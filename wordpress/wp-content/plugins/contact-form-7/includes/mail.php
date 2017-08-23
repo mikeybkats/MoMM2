@@ -207,25 +207,17 @@ function wpcf7_mail_replace_tags( $content, $args = '' ) {
 add_action( 'phpmailer_init', 'wpcf7_phpmailer_init' );
 
 function wpcf7_phpmailer_init( $phpmailer ) {
-	$custom_headers = $phpmailer->getCustomHeaders();
-	$phpmailer->clearCustomHeaders();
 	$wpcf7_content_type = false;
 
-	foreach ( (array) $custom_headers as $custom_header ) {
-		$name = $custom_header[0];
-		$value = $custom_header[1];
-
-		if ( 'X-WPCF7-Content-Type' === $name ) {
-			$wpcf7_content_type = trim( $value );
-		} else {
-			$phpmailer->addCustomHeader( $name, $value );
+	foreach ( (array) $phpmailer->getCustomHeaders() as $custom_header ) {
+		if ( 'X-WPCF7-Content-Type' == $custom_header[0] ) {
+			$wpcf7_content_type = trim( $custom_header[1] );
+			break;
 		}
 	}
 
-	if ( 'text/html' === $wpcf7_content_type ) {
+	if ( 'text/html' == $wpcf7_content_type ) {
 		$phpmailer->msgHTML( $phpmailer->Body );
-	} elseif ( 'text/plain' === $wpcf7_content_type ) {
-		$phpmailer->AltBody = '';
 	}
 }
 

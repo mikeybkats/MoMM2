@@ -914,15 +914,6 @@ class Akismet {
 			return $approved;
 		}
 
-		if ( 'trash' === $approved ) {
-			// If the last comment we checked has had its approval set to 'trash',
-			// then it failed the comment blacklist check. Let that blacklist override
-			// the spam check, since users have the (valid) expectation that when
-			// they fill out their blacklists, comments that match it will always
-			// end up in the trash.
-			return $approved;
-		}
-
 		// bump the counter here instead of when the filter is added to reduce the possibility of overcounting
 		if ( $incr = apply_filters('akismet_spam_count_incr', 1) )
 			update_option( 'akismet_spam_count', get_option('akismet_spam_count') + $incr );
@@ -1100,10 +1091,17 @@ class Akismet {
 	}
 
 	public static function load_form_js() {
+		// WP < 3.3 can't enqueue a script this late in the game and still have it appear in the footer.
+		// Once we drop support for everything pre-3.3, this can change back to a single enqueue call.
 		wp_register_script( 'akismet-form', plugin_dir_url( __FILE__ ) . '_inc/form.js', array(), AKISMET_VERSION, true );
-		wp_enqueue_script( 'akismet-form' );
+		add_action( 'wp_footer', array( 'Akismet', 'print_form_js' ) );
+		add_action( 'admin_footer', array( 'Akismet', 'print_form_js' ) );
 	}
 	
+	public static function print_form_js() {
+		wp_print_scripts( 'akismet-form' );
+	}
+
 	public static function inject_ak_js( $fields ) {
 		echo '<p style="display: none;">';
 		echo '<input type="hidden" id="ak_js" name="ak_js" value="' . mt_rand( 0, 250 ) . '"/>';
@@ -1207,7 +1205,7 @@ p {
 	 * @param mixed $akismet_debug The data to log.
 	 */
 	public static function log( $akismet_debug ) {
-		if ( apply_filters( 'akismet_debug_log', defined( 'WP_DEBUG' ) && WP_DEBUG && defined( 'WP_DEBUG_LOG' ) && WP_DEBUG_LOG && defined( 'AKISMET_DEBUG' ) && AKISMET_DEBUG ) ) {
+		if ( apply_filters( 'akismet_debug_log', defined( 'WP_DEBUG' ) && WP_DEBUG && defined( 'WP_DEBUG_LOG' ) && WP_DEBUG_LOG ) ) {
 			error_log( print_r( compact( 'akismet_debug' ), true ) );
 		}
 	}
@@ -1293,13 +1291,5 @@ p {
 		}
 
 		return $meta_value;
-	}
-	
-	public static function predefined_api_key() {
-		if ( defined( 'WPCOM_API_KEY' ) ) {
-			return true;
-		}
-		
-		return apply_filters( 'akismet_predefined_api_key', false );
 	}
 }

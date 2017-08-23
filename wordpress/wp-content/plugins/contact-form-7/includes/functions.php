@@ -330,7 +330,6 @@ function wpcf7_count_code_units( $string ) {
 	}
 
 	$string = (string) $string;
-	$string = str_replace( "\r\n", "\n", $string );
 
 	$encoding = mb_detect_encoding( $string, mb_detect_order(), true );
 

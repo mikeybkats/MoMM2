@@ -110,7 +110,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 }
 .subscribe-promo {
     width: 100% !important;
-    max-width: unset;
+    max-width: unset !important;
     margin: unset;
     padding: unset;
 }
@@ -745,9 +745,21 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 /* ----- Post Category ----- */
 .cat {
   padding: 5px;
-  background-color: #BD2424;
+  /* background-color: #BD2424; */
   max-width: 150px;
-  text-align: center;
+  border: 1px solid #BD2424;
+  text-align: center;  
+}
+
+.cat:hover {
+  transition: background .5s, color .5s; 
+  background: #BD2424;
+  color: white;
+} 
+
+.cat:hover a {
+  transition: background .5s, color .5s; 
+  color: white !important;
 }
 
 .post-header .cat {
@@ -756,7 +768,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 }
  
 .feat-overlay .cat a, .post-header .cat a {
-	color: white;
+	color: #BD2424;
 	text-transform:uppercase;
 	letter-spacing:2px;
 	font-size:12px;
@@ -1753,9 +1765,40 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 /* 10. Footer
 /* -------------------------------------- */
 #footer {
-	background:#f4f4f4;
+	background:#f2f2f2;
 	margin-top:60px;
 }
+#footer h3 {
+  font-weight: 600;
+  font-size: 13px;
+  color: #555;
+  font-family: sans-serif;
+}
+
+#footer h3 a {
+  font-weight: 600;
+  font-size: 13px;
+  color: #555;
+  font-family: sans-serif;
+}
+
+.underline-link {
+  text-decoration: underline;
+  color: #555;
+}
+
+#footer p {
+  color: #555;
+}
+
+#footer a {
+  color: gray;
+}
+
+.footer-bottomrow p {
+  color: gray;
+}
+
 #ig-footer {
 	position:relative;
 	text-align:center;
@@ -3016,5 +3059,11 @@ input#rememberme {
 	max-width: 700px;
 	margin: 0px;
 	text-align: left;
+}
+
+.gray-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 40px 0px;
 }
 
