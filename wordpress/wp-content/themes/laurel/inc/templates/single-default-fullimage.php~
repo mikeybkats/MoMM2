@@ -6,9 +6,9 @@
 		
 		<div class="sp-row">
 		
-			<div id="main" class="fullwidth">
+			<div id="main">
 			
-				<div class="sp-row post-layout">
+				<div class="post-2 sp-row post-layout">
 			
 					<?php get_template_part('content'); ?>
 						
@@ -18,3 +18,5 @@
 			
 	<?php endwhile; ?>		
 	<?php endif; ?>
+
+<?php get_sidebar(); ?>

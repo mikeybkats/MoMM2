@@ -8,7 +8,7 @@
 		
 			<div id="main" class="fullwidth">
 			
-				<div class="sp-row post-layout">
+				<div class="sp-row post-layout post-2">
 			
 					<?php get_template_part('content'); ?>
 						

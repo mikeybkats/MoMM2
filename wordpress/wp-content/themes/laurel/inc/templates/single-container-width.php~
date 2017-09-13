@@ -2,9 +2,9 @@
 		
 		<div class="sp-row">
 		
-			<div id="main">
+			<div id="main" class="fullwidth">
 			
-				<div class="sp-row post-layout">
+				<div class="sp-row post-layout post-2">
 			
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				
@@ -17,5 +17,3 @@
 				</div>
 				
 			</div>
-
-<?php get_sidebar(); ?>

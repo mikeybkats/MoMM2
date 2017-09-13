@@ -631,13 +631,17 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 	margin-bottom:60px;
 }
 
-.post-2 {
-  max-width: 640px;
+.post-2, .post-2003, .post-1917, .post-1919  {
+  max-width: 700px;
   margin: 0px auto;
 }
 
-.post-2 .post-header{
+.post-2 .post-header, .post-2003 .post-header, .post-1917 .post-header, .post-1919 .post-header{
   /*display: none;*/
+}
+
+.post-2 .row {
+  margin: 60px 0px;
 }
 
 .about-title {
@@ -1768,6 +1772,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 	background:#f2f2f2;
 	margin-top:60px;
 }
+
 #footer h3 {
   font-weight: 600;
   font-size: 13px;
@@ -1780,6 +1785,10 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
   font-size: 13px;
   color: #555;
   font-family: sans-serif;
+}
+
+.about-momm {
+  margin-bottom: 20px;
 }
 
 .underline-link {
@@ -1796,7 +1805,7 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 }
 
 .footer-bottomrow p {
-  color: gray;
+  color: gray !important;
 }
 
 #ig-footer {
@@ -1859,6 +1868,17 @@ h1,h2,h3,h4,h5,h6, .post-entry blockquote p, .entry-content blockquote p, .post-
 }
 .copyright {
 	padding:0 20px;
+}
+
+.social-icon {
+  max-width: 30px;
+  margin: 10px;
+}
+ 
+.twitter-icon {
+  margin: 0px;
+  max-width: 50px;
+  margin-top: 1px; 
 }
 
 /* -------------------------------------- */
@@ -3059,6 +3079,7 @@ input#rememberme {
 	max-width: 700px;
 	margin: 0px;
 	text-align: left;
+  margin: 0px auto;
 }
 
 .gray-box {
@@ -3067,3 +3088,7 @@ input#rememberme {
     margin: 40px 0px;
 }
 
+.bio-row{
+  display: flex;
+  align-items: center;
+}

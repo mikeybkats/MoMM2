@@ -1,4 +1,4 @@
-=== Popup Maker - Best Rated ===
+=== Popup Maker™ - Best Rated ===
 Contributors: danieliser, wppopupmaker, waltmesser, yogaman5020
 Author URI: https://wppopupmaker.com/?utm_source=readme-header&utm_campaign=Readme&utm_medium=author-uri
 Plugin URI: https://wppopupmaker.com/?utm_capmaign=Readme&utm_source=readme-header&utm_medium=plugin-uri
@@ -6,7 +6,7 @@ Donate link:
 Tags: marketing, optin, advertising, responsive popups, promotion, popover, pop-up, pop over, lightbox, conversion, modal, popup, popups
 Requires at least: 3.6
 Tested up to: 4.8
-Stable tag: 1.6.5
+Stable tag: 1.6.6
 License: GNU Version 3 or Any Later Version
 
 Create any popup imaginable! Customize your popups from head-to-toe and give your site more utility, usability, and conversions.
@@ -15,7 +15,7 @@ Create any popup imaginable! Customize your popups from head-to-toe and give you
 
 = Best WordPress Popup Plugin =
 
-Popup Maker is the **best popup plugin WordPress** has to offer. It is extremely versatile & flexible. Bend it to create any type of modal or content overlay for your WordPress website.
+Popup Maker™ is the **best popup plugin WordPress** has to offer. It is extremely versatile & flexible. Bend it to create any type of modal or content overlay for your WordPress website.
 
 Customize every facet of your popups, from theme and position, to targeting and cookies.
 
@@ -91,11 +91,14 @@ There are several common causes for this which include:
 
 == Changelog ==
 
+= v1.6.6 - 07/29/2017 =
+* Fix: Bug with closing forms using newest version of Gravity Forms.
+
 = v1.6.5 - 07/16/2017 =
 * Tweak: Added new popup class for theme names. Thanks @bluantinoo.
 * Fix: Bug in menu popups save and render functionality not working correctly.
 * Fix: Finally found issue where randomly assets tab checkboxes wouldn't uncheck & save properly.
-* Fix: Sanitized active tab key against whitelist to prevent possible XSS issue. Reported by Chris Liu 
+* Fix: Sanitized active tab key against whitelist.
 * Fix: Errors in w3c validation scans from form meta fields.
 * Fix: Settings asset label mismatch.
 

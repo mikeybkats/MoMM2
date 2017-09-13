@@ -6,35 +6,46 @@
 		</div>
 		
 		<footer id="footer">
-
+<div class="row footer-social-row start-sm center-xs">
+  <div class="col-sm-1 col-xs-4">
+      <a href="https://www.facebook.com/methodsofamodernmale/"><img class="social-icon" src="../wp-content/themes/laurel/img/FB.png" alt=""></a>
+  </div>
+  <div class="col-sm-1 col-xs-4">  
+    <a href="https://www.instagram.com/methodsofamodernmale/"><img class="social-icon" src="../wp-content/themes/laurel/img/instagram.png" alt=""></a>
+  </div>
+  <div class="col-sm-1 col-xs-4">
+    <a href="https://twitter.com/methods4modern"><img class="twitter-icon" src="../wp-content/themes/laurel/img/twitter_blue.png" alt=""></a>
+  </div> 
+</div>
 <div class="row footer-toprow">
-  <div class="col-sm-4 col-xs-12">
+  <div class="col-sm-4 col-xs-12 about-momm">
     <h3>About MoMM</h3>
-    <p>Methods of a Modern Male is a lifestyle blog focused on everything millennial men need to live a happier, healthier life. Think of us as your trendy friend in LA who’s in the know about everything from fashion to fitness, but still comes back home to bro down with the boys on the weekends. Straight talk on the things that matter to help make the weird transition to adulthood a little easier. <br/><br/>
-<a href=""><span class="underline-link">Learn about us</span></a>
+    <p>The struggle is real, and that’s why Methods of a Modern Male was born. We’re focused on providing information on everything the millennial man needs to know about adulting, in a way that’s actually helpful, affordable and understandable.<br/><br/>
+<a href="/about"><span class="underline-link">Learn about us</span></a>
+<br />
 </p>
   </div>
   <div class="col-sm-2 col-xs-12"></div>
   <div class="col-sm-2 col-xs-12">
-    <a href=""><h3>Contact</h3></a>
+    <a href="mailto:nikolai@methodsofamodernmale.com"><h3>Contact</h3></a>
   </div>
   <div class="col-sm-2 col-xs-12">
-    <a href=""><h3>Contribute</h3></a>
+    <h3>Contribute</h3>
     <ul>
-      <li><a href="">Current & Past Contributors</a></li>
-      <li><a href="">Become a Contributor</a></li>
+      <li><a href="/contributors">Current & Past Contributors</a></li>
+      <li><a href="/become-a-contributor">Become a Contributor</a></li>
     </ul>
   </div>
   <div class="col-sm-2 col-xs-12">
-    <h3><a>Advertise</a></h3>
+    <h3><a href="/advertise">Partnerships & Advertising</a></h3>
   </div>
 </div>
 
 <div class="row footer-bottomrow">
   <div class="col-sm-4 col-xs-12"><a href=""></a></div>
-  <div class="col-sm-2 col-xs-12"><a href="">Site Map</a></div>
-  <div class="col-sm-2 col-xs-12"><a href="">Privacy Policy</a></div>
-  <div class="col-sm-2 col-xs-12"><a href="">Terms of Use</a></div>
+  <div class="col-sm-2 col-xs-12"><a href="/sitemap_index.xml">Site Map</a></div>
+  <div class="col-sm-2 col-xs-12"><a href="/privacy">Privacy Policy</a></div>
+  <div class="col-sm-2 col-xs-12"><a href="/terms-and-conditions">Terms of Use</a></div>
   <div class="col-sm-2 col-xs-12"><p>Copyright 2017</p></div>
 </div>
 

@@ -12,13 +12,23 @@ a.newsletterButton:hover{
     color: #999 !important;
 }
 
+#footer {
+  padding: 0px 100px;
+}
+
 .footer-toprow {
-  margin: 0px 100px;
-  padding: 50px 0px;
+  margin: 0px 0px;
+  padding-bottom: 50px;
+}
+
+.footer-social-row {
+  margin: 10px 0px; 
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .footer-bottomrow {
-  margin: 0px 100px;
+  margin: 0px 0px;
   padding: 0 0 50px 0;
 }
 
@@ -533,7 +543,9 @@ a.newsletterButton:hover{
 	.related.products ul.products li.product {
 		width:100%;
 	}
-	
+  #footer {
+    padding: 0px 20px;	
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -593,6 +605,9 @@ a.newsletterButton:hover{
 	.woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering {
 		float:right;
 	}
-	
+
+  #footer {
+    padding: 0px 20px;
+  }
 }
 
